@@ -1,0 +1,67 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('luii.jpg'); /* Ruta de la imagen de fondo */
+    background-size: 77% 115%; /* Ajustar la imagen para cubrir todo el fondo */
+    background-position: center; /* Centrar la imagen */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    animation: fadeInUp 1s ease-out;
+}
+
+#noButtonContainer {
+    position: relative;
+}
+
+button {
+    font-size: 24px;
+    padding: 15px 30px;
+    margin: 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button#yesButton {
+    background-color: #2ecc71; /* Cambiar el color de fondo del botón "Sí" */
+}
+
+button#noButton {
+    background-color: #e74c3c; /* Cambiar el color de fondo del botón "No" */
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:focus {
+    outline: none;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
